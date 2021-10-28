@@ -36,8 +36,8 @@ public class MainApp {
          System.out.println();
       }
 
-      List<User> getUser = userService.getUserByCar("Camry 3.5", 322);
-      System.out.println(getUser);
+      User user = userService.getModelSeries("Camry 3.5", 322);
+      System.out.println(user);
 
       context.close();
    }
